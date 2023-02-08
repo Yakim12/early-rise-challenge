@@ -1,0 +1,9 @@
+import type { AppProps } from "next/app";
+import { useEffect, useState } from "react";
+
+export default function MyApp({ Component, pageProps }: AppProps) {
+  /* create local state to save account information after signin */
+  console.log("_app");
+  const [account, setAccount] = useState(null);
+  return <Component {...pageProps} />;
+}
